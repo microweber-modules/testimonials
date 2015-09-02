@@ -49,13 +49,10 @@
         })
 
     </script>
-  <div class="mw-ui-btn-nav mw-ui-btn-nav-tabs" id="ttabnav"> <a class="mw-ui-btn active" href="javascript:;">Explore</a> <a class="mw-ui-btn" href="javascript:;" onclick="add_testimonial()">Add new</a> <a class="mw-ui-btn" href="javascript:;">Options</a>   
-  
-
-  
-        <input type="text" class="mw-ui-field pull-right" placeholder="Search" onkeyup="search_events(this.value)">
-
-  </div>
+  <div class="mw-ui-btn-nav mw-ui-btn-nav-tabs" id="ttabnav"> <a class="mw-ui-btn active" href="javascript:;">Explore</a> <a class="mw-ui-btn" href="javascript:;" onclick="add_testimonial()">Add new</a> <a class="mw-ui-btn" href="javascript:;">Options</a>
+<!--    <input type="text" class="mw-ui-field pull-right" placeholder="Search" onkeyup="search_events(this.value)">
+-->  
+</div>
   <div class="mw-ui-box mw-ui-box-content">
     <div class="ttab" style="display: block;">
       <module type="testimonials/list" id="list-testimonials" />
@@ -116,14 +113,7 @@
             });
 
             </script>
-     
-     
-     
-     
-     
-     
-     
-   <?php 
+      <?php 
    
      /*
      
@@ -161,12 +151,10 @@
    
    
    ?>
-     
-     <div class="mw-ui-field-holder">
-       <label class="mw-ui-label">Show testimonials for project</label>
-     <module type="testimonials/project_select" id="project-select-testimonials" option-group="<?php print $params['id'] ?>"  />
-     </div>
-     
+      <div class="mw-ui-field-holder">
+        <label class="mw-ui-label">Show testimonials for project</label>
+        <module type="testimonials/project_select" id="project-select-testimonials" option-group="<?php print $params['id'] ?>"  />
+      </div>
       <div class="mw-ui-field-holder">
         <label class="mw-ui-label">Rotation Interval</label>
         <input type="text" class="mw-ui-field mw-ui-field-medium mw_option_field" name="interval" data-option-group="fourtestimonials" value="<?php print $interval; ?>" style="width:40px;text-align: center" />

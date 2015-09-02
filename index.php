@@ -34,6 +34,11 @@ if($show_testimonials_per_project){
 
 }
 
+
+if(empty($data)){
+return print lnotif("Click here to edit Testimonials");	
+}
+
 $openquote = get_option('openquote', 'fourtestimonials');
 $closequote = get_option('closequote', 'fourtestimonials');
 
